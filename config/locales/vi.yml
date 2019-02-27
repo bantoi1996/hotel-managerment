@@ -1,0 +1,14 @@
+vi:
+  home: "Trang chủ"
+  help: "Trợ giúp"
+  english: "Tiếng Anh"
+  vietnamese: "Tiếng Việt"
+  sign_up: "Đăng ký"
+  log_in: "Đăng nhập"
+  contact: "Liên hệ"
+  top: "Khách sạn hàng đầu"
+  hotel_ma: "Đặt phòng khách sạn"
+  static_pages:
+    help:
+      help_me: "Đây là trang hỗ trợ khách hàng"
+      help: "Trợ giúp"
