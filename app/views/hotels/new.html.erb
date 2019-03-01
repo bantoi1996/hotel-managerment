@@ -1,0 +1,35 @@
+<div class="jumbotron">
+  <p class="display text-center">New Hote</p>
+</div>
+<p>
+<%= form_with scope: :hotel, url: hotels_path, local: true do |form| %>
+  <%= render 'error' %>
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+    <p>
+      <%= form.label :name %><br>
+      <%= form.text_field :name, class:"form-control" %>
+    </p>
+    <p>
+      <%= form.label :description %><br>
+      <%= form.text_area :description, class:"form-control"%>
+    </p>
+    <p>
+      <%= form.label :starLevel %><br>
+      <%= form.text_field :starLevel, class:"form-control" %>
+    </p>
+    <p>
+      <%= form.label :address %><br>
+      <%= form.text_field :address, class:"form-control" %>
+    </p>
+    <p>
+      <%= form.label :image %>
+      <%= form.file_field :image %>
+    </p>
+    <p>
+      <%= form.submit "create hetel", class: "btn btn-primary" %>
+    </p>
+
+  <% end %>
+    </div>
+  </div>

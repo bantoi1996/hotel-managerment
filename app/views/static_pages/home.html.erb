@@ -1,7 +1,10 @@
 <% provide :title, t("home") %>
+<style type="text/css">
+  div#image-list img {border-radius: 10%;}
+</style>
 
 <h1>
-  <%= image_tag("ks5.jpg", alt: "ks5") %>
+  <%= image_tag("ks.jpg", alt: "ks", width: "100%") %>
 </h1>
 
 <h2>
@@ -9,30 +12,15 @@
 </h2>
 
 <div class="container">
- <div class="row">
-    <div class="col-md-3">
-      <%= link_to image_tag("ks1.jpg", alt: "ks1", :size => "250x150"), root_path, id: "ks1" %>
-      <p>Khách sạn 1</p>
-        Phố Huế - Hà Nội.
-    </div>
 
-    <div class="col-md-3">
-      <%= link_to image_tag("ks2.jpg", alt: "ks2", :size => "250x150"), root_path, id: "ks2" %>
-      <p>Khách sạn 2</p>
-        Trần Khát Chân - Hà Nội.
+  <div class="row" id="image-list">
+      <% @hotel.each do |t| %>
+    <div class="col-md-3 col-sm-6">
+      <%= image_tag t.image.to_s, alt: "ks1", width: "100%", id: "ks1" %>
+      <p><%= t.name %></p>
+      <p><%= t.address%></p>
     </div>
+    <% end %>
 
-    <div class="col-md-3">
-      <%= link_to image_tag("ks3.jpg", alt: "ks3", :size => "250x150"), root_path, id: "ks3" %>
-      <p>Khách sạn 3</p>
-        Sơn Trà - Đà Nẵng
-    </div>
-
-    <div class="col-md-3">
-      <%= link_to image_tag("ks4.jpg", alt: "ks4", :size => "250x150"), root_path, id: "ks4" %>
-      <p>Khách sạn 4</p>
-        Quận 1 - Hồ Chí Minh
-      
-    </div>
-    </div>    
+  </div>
 </div>

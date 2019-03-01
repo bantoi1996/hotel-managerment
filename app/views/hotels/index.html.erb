@@ -1,0 +1,32 @@
+<%= link_to "new hotel", new_hotel_path %>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Tour name</th>
+      <th scope="col">Description</th>
+      <th scope="col">starLevel</th>
+      <th scope="col">City</th>
+      <th scope="col">Country</th>
+      <th scope="col">Image</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @hotel.each do |t| %>
+    <tr>
+      <td><%= t.name %></td>
+      <td><%= t.description %></td>
+      <td><%= t.starLevel %></td>
+      <td><%= t.address %></td>
+      <td>
+         <%= image_tag t.image_url.to_s, class:"fixsize" %>
+      </td>
+      <td>
+        <%= link_to t("edit"), edit_hotel_path(t), class:"btn btn-primary" %>
+        <%= link_to t("delete"), hotel_path(t), class:"btn btn-danger",
+              method: :delete, data: { confirm: t("you_sure") } %>
+      </td>
+    </tr>
+  <% end %>
+
+  </tbody>
+</table>

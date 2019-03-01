@@ -8,7 +8,93 @@ vi:
   contact: "Liên hệ"
   top: "Khách sạn hàng đầu"
   hotel_ma: "Đặt phòng khách sạn"
+  help_me: "Đây là trang hỗ trợ khách hàng"
+  welcome: "Chào mừng đến với website Đặt phòng khách sạn!"
+  error_signup: "Đăng ký thất bại!"
+  fullname: "Họ và tên"
+  address: "Địa chỉ"
+  telephone: "Số điện thoại"
+  email: "Email"
+  pass: "Mật khẩu"
+  confirmation: "Xác nhận mật khẩu"
+  create: "Tạo tài khoản"
+  error_find_user: "Không tìm thấy người dùng"
+  form_contains: "Biểu mẫu có chứa"
+  danger: "Email/mật khẩu không hợp lệ"
+  users: "Người dùng"
+  profile: "Hồ sơ"
+  settings: "Cài đặt"
+  log_out: "Đăng xuất"
+  new_user: "Người dùng mới?"
+  sing_up_now: "Đăng ký ngay bây giờ!"
+  account: "Tài khoản"
+
   static_pages:
-    help:
-      help_me: "Đây là trang hỗ trợ khách hàng"
-      help: "Trợ giúp"
+    contact:
+      contact: "Liên hệ"
+      lh: "Mọi thắc mắc xin liên hệ qua Email"
+      or: "hoặc số điện thoại"
+    ks1:
+      ks1: "Khách sạn 1"
+      ds: "Danh sách phòng"
+      ro: "Phòng"
+    ks2:
+      ks2: "Khách sạn 2"
+      ro: "Phòng"
+      ds: "Danh sách phòng"
+    ks3:
+      ks2: "Khách sạn 3"
+      ds: "Danh sách phòng"
+      ro: "Phòng"
+    ks4:
+      ks4: "Khách sạn 4"
+      ds: "Danh sách phòng"
+      ro: "Phòng"
+    ph1:
+      ph1: "Phòng 1.101"
+      bk: "Đặt phòng"
+    ph2:
+      ph2: "Phòng 1.102"
+      bk: "Đặt phòng"
+    ph3:
+      ph3: "Phòng 1.103"
+      bk: "Đặt phòng"
+    ph4:
+      ph4: "Phòng 1.104"
+      bk: "Đặt phòng"
+    ph5:
+      ph5: "Phòng 2.101"
+      bk: "Đặt phòng"
+    ph6:
+      ph6: "Phòng 2.102"
+      bk: "Đặt phòng"
+    ph7:
+      ph7: "Phòng 2.103"
+      bk: "Đặt phòng"
+    ph8:
+      ph8: "Phòng 2.104"
+      bk: "Đặt phòng"
+    ph9:
+      ph9: "Phòng 3.101"
+      bk: "Đặt phòng"
+    ph10:
+      ph10: "Phòng 3.102"
+      bk: "Đặt phòng"
+    ph11:
+      ph11: "Phòng 3.103"
+      bk: "Đặt phòng"
+    ph12:
+      ph12: "Phòng 3.104"
+      bk: "Đặt phòng"
+    ph13:
+      ph13: "Phòng 4.101"
+      bk: "Đặt phòng"
+    ph14:
+      ph14: "Phòng 4.102"
+      bk: "Đặt phòng"
+    ph15:
+      ph15: "Phòng 4.103"
+      bk: "Đặt phòng"
+    ph16:
+      ph16: "Phòng 4.104"
+      bk: "Đặt phòng"

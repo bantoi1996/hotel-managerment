@@ -1,0 +1,35 @@
+<%= form_with(model: @hotel, local: true) do |form| %>
+  <%= render 'error' %>
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+    <p>
+      <%= form.label :name %><br>
+      <%= form.text_field :name, class:"form-control" %>
+    </p>
+    <p>
+      <%= form.label :description %><br>
+      <%= form.text_area :description, :value => @hotel.description, class:"form-control" %>
+    </p>
+    <p>
+      <%= form.label :starLevel %><br>
+      <%= form.text_field :starLevel, class:"form-control" %>
+    </p>
+    <p>
+      <%= form.label :address %><br>
+      <%= form.text_field :address, class:"form-control" %>
+    </p>
+    <p>
+      <%= form.label :image %>
+      <%= form.file_field :image %>
+      <%= image_tag @hotel.image.to_s, class:'fixsize' %>
+    </p>
+
+    <p>
+      <%= form.submit  "update", class: "btn btn-primary" %>
+    </p>
+
+  <% end %>
+    </div>
+  </div>
+
+  <%= link_to 'Back', root_path %>

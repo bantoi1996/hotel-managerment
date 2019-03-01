@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+<h3>hotel Details</h3>
+<p>
+  <strong>name:</strong>
+  <%= @hotel.name %>
+</p>
+<p>
+  <strong>starLevel:</strong>
+  <%= @hotel.starLevel %>
+</p>
+<p>
+  <strong>address:</strong>
+  <%= @hotel.address %>
+</p>
+<p>
+  <strong>description:</strong>
+  <%= @hotel.description %>
+</p>
+
+<p>
+  <strong>
+  <%= image_tag @hotel.image.to_s, alt: "ks1", width: "100%", id: "ks1" %>
+  </strong>
+</p>
