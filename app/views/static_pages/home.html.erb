@@ -16,9 +16,10 @@
   <div class="row" id="image-list">
       <% @hotel.each do |t| %>
     <div class="col-md-3 col-sm-6">
-      <%= image_tag t.image.to_s, alt: "ks1", width: "100%", id: "ks1" %>
+      <%= image_tag t.image.to_s, width: "100%" %>
       <p><%= t.name %></p>
       <p><%= t.address%></p>
+      <p><%= link_to "Xem phòng", show_room_path(id: t.id) %></p>
     </div>
     <% end %>
 

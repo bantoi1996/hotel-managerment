@@ -1,0 +1,31 @@
+<%= link_to t("new_room"), new_room_path %>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col"><%= t "room_name" %></th>
+      <th scope="col"><%= t "description" %></th>
+      <th scope="col"><%= t "hotel" %></th>
+      <th scope="col"><%= t "room_type" %></th>
+      <th scope="col"><%= t "status" %></th>
+      <th scope="col"><%= t "image" %></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @room.each do |t| %>
+    <tr>
+      <td><%= t.name %></td>
+      <td><%= t.description %></td>
+      <td><%= t.hotel_id %></td>
+      <td><%= t.room_type_id %></td>
+      <td><%= t.status %></td>
+      <td><%= image_tag t.image_url.to_s, class:"fixsize" %></td>
+      <td>
+        <%= link_to t("edit"), edit_room_path(t), class:"btn btn-primary" %>
+        <%= link_to t("delete"), room_path(t), class:"btn btn-danger",
+              method: :delete, data: { confirm: t("you_sure") } %>
+      </td>
+    </tr>
+  <% end %>
+
+  </tbody>
+</table>

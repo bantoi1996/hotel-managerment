@@ -28,73 +28,27 @@ vi:
   new_user: "Người dùng mới?"
   sing_up_now: "Đăng ký ngay bây giờ!"
   account: "Tài khoản"
+  hotel: "Khách sạn"
+  room: "Phòng"
+
+  new_hotel: "Tạo khách sạn mới"
+  hotel_name: "Tên khách sạn"
+  description: "Mô tả"
+  star_level: "Hạng sao"
+  image: "Hình ảnh"
+  create_hotel: "Tạo khách sạn"
+
+  new_room: "Tạo phòng mới"
+  room_name: "Tên phòng"
+  room_type: "Loại phòng"
+  status: "Trạng thái"
+  create_room: "Tạo phòng"
+
+  edit: "Sửa"
+  delete: "Xóa"
 
   static_pages:
     contact:
       contact: "Liên hệ"
       lh: "Mọi thắc mắc xin liên hệ qua Email"
       or: "hoặc số điện thoại"
-    ks1:
-      ks1: "Khách sạn 1"
-      ds: "Danh sách phòng"
-      ro: "Phòng"
-    ks2:
-      ks2: "Khách sạn 2"
-      ro: "Phòng"
-      ds: "Danh sách phòng"
-    ks3:
-      ks2: "Khách sạn 3"
-      ds: "Danh sách phòng"
-      ro: "Phòng"
-    ks4:
-      ks4: "Khách sạn 4"
-      ds: "Danh sách phòng"
-      ro: "Phòng"
-    ph1:
-      ph1: "Phòng 1.101"
-      bk: "Đặt phòng"
-    ph2:
-      ph2: "Phòng 1.102"
-      bk: "Đặt phòng"
-    ph3:
-      ph3: "Phòng 1.103"
-      bk: "Đặt phòng"
-    ph4:
-      ph4: "Phòng 1.104"
-      bk: "Đặt phòng"
-    ph5:
-      ph5: "Phòng 2.101"
-      bk: "Đặt phòng"
-    ph6:
-      ph6: "Phòng 2.102"
-      bk: "Đặt phòng"
-    ph7:
-      ph7: "Phòng 2.103"
-      bk: "Đặt phòng"
-    ph8:
-      ph8: "Phòng 2.104"
-      bk: "Đặt phòng"
-    ph9:
-      ph9: "Phòng 3.101"
-      bk: "Đặt phòng"
-    ph10:
-      ph10: "Phòng 3.102"
-      bk: "Đặt phòng"
-    ph11:
-      ph11: "Phòng 3.103"
-      bk: "Đặt phòng"
-    ph12:
-      ph12: "Phòng 3.104"
-      bk: "Đặt phòng"
-    ph13:
-      ph13: "Phòng 4.101"
-      bk: "Đặt phòng"
-    ph14:
-      ph14: "Phòng 4.102"
-      bk: "Đặt phòng"
-    ph15:
-      ph15: "Phòng 4.103"
-      bk: "Đặt phòng"
-    ph16:
-      ph16: "Phòng 4.104"
-      bk: "Đặt phòng"

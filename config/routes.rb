@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  get 'books/_error'
+  get 'books/edit'
+  get 'books/index'
+  get 'books/new'
+  get 'books/show'
+  get 'show_room/index'
   get 'sessions/new'
   scope "(:locale)", locale: /en|vi/ do
     root "static_pages#home"
@@ -11,5 +17,7 @@ Rails.application.routes.draw do
     delete "/logout", to: "sessions#destroy"
     resources :users
     resources :hotels
+    resources :rooms
+    get "/show_room", to: "show_room#index"
   end
 end

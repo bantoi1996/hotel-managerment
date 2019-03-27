@@ -1,13 +1,13 @@
-<%= link_to "new hotel", new_hotel_path %>
+<%= link_to t("new_hotel"), new_hotel_path %>
 <table class="table">
   <thead>
     <tr>
-      <th scope="col">Tour name</th>
-      <th scope="col">Description</th>
-      <th scope="col">starLevel</th>
-      <th scope="col">City</th>
-      <th scope="col">Country</th>
-      <th scope="col">Image</th>
+      <th scope="col"><%= t "hotel_name" %></th>
+      <th scope="col"><%= t "description" %></th>
+      <th scope="col"><%= t "star_level" %></th>
+      <th scope="col"><%= t "address" %></th>
+      <th scope="col"><%= t "image" %></th>
+      <th scope="col"></th>
     </tr>
   </thead>
   <tbody>
@@ -17,9 +17,7 @@
       <td><%= t.description %></td>
       <td><%= t.starLevel %></td>
       <td><%= t.address %></td>
-      <td>
-         <%= image_tag t.image_url.to_s, class:"fixsize" %>
-      </td>
+      <td><%= image_tag t.image_url.to_s, class:"fixsize" %></td>
       <td>
         <%= link_to t("edit"), edit_hotel_path(t), class:"btn btn-primary" %>
         <%= link_to t("delete"), hotel_path(t), class:"btn btn-danger",

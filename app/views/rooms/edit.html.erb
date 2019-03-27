@@ -1,0 +1,39 @@
+<%= form_with(model: @room, local: true) do |form| %>
+  <%= render 'error' %>
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+    <p>
+      <%= form.label :name %><br>
+      <%= form.text_field :name, class:"form-control" %>
+    </p>
+    <p>
+      <%= form.label :description %><br>
+      <%= form.text_area :description, :value => @room.description, class:"form-control" %>
+    </p>
+    <p>
+      <%= form.label :hotel %><br>
+      <%= select("room", "hotel_id", Hotel.all.collect {|c| [ c.name, c.id ] }, {prompt: 'Select ', selected: '', disabled: ''}) %>
+    </p>
+    <p>
+      <%= form.label :room_type %><br>
+      <%= select("room", "room_type_id", RoomType.all.collect {|c| [ c.name, c.id ] }, {prompt: 'Select room_type', selected: '', disabled: ''}) %>
+    </p>
+    <p>
+      <%= form.label :status %><br>
+      <%= form.text_field :status, class:"form-control" %>
+    </p>
+    <p>
+      <%= form.label :image %>
+      <%= form.file_field :image %>
+      <%= image_tag @room.image.to_s, class:'fixsize' %>
+    </p>
+
+    <p>
+      <%= form.submit  "update", class: "btn btn-primary" %>
+    </p>
+
+  <% end %>
+    </div>
+  </div>
+
+  <%= link_to 'Back', root_path %>

@@ -1,0 +1,41 @@
+<!-- <div class="jumbotron">
+  <p class="display text-center">New Room</p>
+</div> -->
+<% provide :title, t("new_room") %>
+<h1><%= t "new_room" %></h1>
+<p>
+<%= form_with scope: :room, url: rooms_path, local: true do |form| %>
+  <%= render 'error' %>
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+    <p>
+      <%= form.label :name, t("room_name") %><br>
+      <%= form.text_field :name, class:"form-control" %>
+    </p>
+    <p>
+      <%= form.label :description, t("description") %><br>
+      <%= form.text_area :description, class:"form-control"%>
+    </p>
+    <p>
+      <%= form.label :hotel, t("hotel") %><br>
+      <%= select("room", "hotel_id", Hotel.all.collect {|c| [ c.name, c.id ] }, {prompt: 'Select ', selected: '', disabled: ''}) %>
+    </p>
+    <p>
+      <%= form.label :room_type, t("room_type") %><br>
+      <%= select("room", "room_type_id", RoomType.all.collect {|c| [ c.name, c.id ] }, {prompt: 'Select room_type', selected: '', disabled: ''}) %>
+    </p>
+    <p>
+      <%= form.label :status, t("status") %><br>
+      <%= form.text_field :status, class:"form-control" %>
+    </p>
+    <p>
+      <%= form.label :image, t("image") %>
+      <%= form.file_field :image %>
+    </p>
+    <p>
+      <%= form.submit t("create_room"), class: "btn btn-primary" %>
+    </p>
+
+  <% end %>
+    </div>
+  </div>

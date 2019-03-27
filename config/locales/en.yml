@@ -28,73 +28,27 @@ en:
   new_user: "New user?"
   sing_up_now: "Sign up now!"
   account: "Account"
+  hotel: "Hotel"
+  room: "Room"
+
+  new_hotel: "New Hotel"
+  hotel_name: "Name"
+  description: "Description"
+  star_level: "Star Level"
+  image: "Image"
+  create_hotel: "Create Hotel"
+
+  new_room: "New Room"
+  room_name: "Name"
+  room_type: "Room type"
+  status: "Status"
+  create_room: "Create Room"
+
+  edit: "Edit"
+  delete: "Delete"
 
   static_pages:
     contact:
       contact: "Contact"
       lh: "Any questions please contact by Email"
       or: "or phone number"
-    ks1:
-      ks1: "Hotel 1"
-      ds: "List of rooms"
-      ro: "Room"
-    ks2:
-      ks2: "Hotel 2"
-      ds: "List of rooms"
-      ro: "Room"
-    ks3:
-      ks3: "Hotel 3"
-      ds: "List of rooms"
-      ro: "Room"
-    ks4:
-      ks4: "Hotel 4"
-      ds: "List of rooms"
-      ro: "Room"
-    ph1:
-      ph1: "Room 1.101"
-      bk: "Booking"
-    ph2:
-      ph2: "Room 1.102"
-      bk: "Booking"
-    ph3:
-      ph3: "Room 1.103"
-      bk: "Booking"
-    ph4:
-      ph4: "Room 1.104"
-      bk: "Booking"
-    ph5:
-      ph5: "Room 2.101"
-      bk: "Booking"
-    ph6:
-      ph6: "Room 2.102"
-      bk: "Booking"
-    ph7:
-      ph7: "Room 2.103"
-      bk: "Booking"
-    ph8:
-      ph8: "Room 2.104"
-      bk: "Booking"
-    ph9:
-      ph9: "Room 3.101"
-      bk: "booking"
-    ph10:
-      ph10: "Room 3.102"
-      bk: "Booking"
-    ph11:
-      ph11: "Room 3.103"
-      bk: "Booking"
-    ph12:
-      ph12: "Room 3.104"
-      bk: "Booking"
-    ph13:
-      ph13: "Room 4.101"
-      bk: "Booking"
-    ph14:
-      ph14: "Room 4.102"
-      bk: "Booking"
-    ph15:
-      ph15: "Room 4.103"
-      bk: "Booking"
-    ph16:
-      ph16: "Room 4.104"
-      bk: "Booking"

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_03_07_061558) do
+ActiveRecord::Schema.define(version: 2019_03_13_110259) do
 
   create_table "bookings", force: :cascade do |t|
     t.integer "status"
@@ -37,13 +37,6 @@ ActiveRecord::Schema.define(version: 2019_03_07_061558) do
     t.index ["user_id"], name: "index_comments_on_user_id"
   end
 
-  create_table "dogs", force: :cascade do |t|
-    t.string "name"
-    t.string "motto"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "hotels", force: :cascade do |t|
     t.string "name"
     t.integer "starLevel"
@@ -68,6 +61,10 @@ ActiveRecord::Schema.define(version: 2019_03_07_061558) do
     t.integer "room_type_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "name"
+    t.string "image"
+    t.integer "hotel_id"
+    t.index ["hotel_id"], name: "index_rooms_on_hotel_id"
     t.index ["room_type_id"], name: "index_rooms_on_room_type_id"
   end
 
